@@ -1,0 +1,63 @@
+#login-page {
+  padding: 10px 0;
+}
+#login-page .login-container {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+#login-page .login-container .login-content {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  left: 10%;
+  width: 40%;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+#login-page .login-container .login-content img {
+  width: 200px;
+  margin-top: 100px;
+}
+#login-page .login-container .login-content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+#login-page .login-container .login-content p {
+  font-size: 14px;
+}
+#login-page .login-container .login-content .login-form {
+  width: 60%;
+}
+#login-page .login-container .login-content .login-form input:-ms-input-placeholder {
+  /* Internet Explorer */
+  color: #ccc;
+}
+#login-page .login-container .login-content .login-form input::-moz-placeholder {
+  color: #ccc;
+}
+#login-page .login-container .login-content .login-form input::placeholder {
+  color: #ccc;
+}
+#login-page .login-container .login-content .login-form button {
+  width: 100%;
+  background-color: #000;
+  margin-top: 30px;
+  margin-bottom: 90px;
+}
+#login-page .login-container .login-content .login-form a {
+  font-style: italic;
+  opacity: 0.8;
+}
+#login-page .login-container .login-img {
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0px 5px 24px rgba(0, 0, 0, 0.7882352941);
+  padding: 25%;
+  background: url(../img/bg.jpg) top center/cover no-repeat;
+}/*# sourceMappingURL=main.css.map */
