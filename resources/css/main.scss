@@ -11,7 +11,7 @@
             z-index: 1;
             background-color: rgba(255, 255, 255, 0.9);
             left: 10%;
-            width: 40%;
+            width: 35%;
             top: 20px;
             display: flex;
             flex-direction: column;
@@ -35,7 +35,7 @@
             }
 
             .login-form {
-                width: 60%;
+                width: 75%;
 
                 input {
                     &::-webkit-input-placeholder {
@@ -75,6 +75,78 @@
             box-shadow: 0px 5px 24px #000000c9;
             padding: 25%;
             background: url(../img/bg.jpg) top center/cover no-repeat;
+        }
+    }
+}
+
+#app {
+
+    header {
+        float: right;
+        background-color: #fff;
+        width: calc(100vw - 300px);
+        height: 75px;
+        box-shadow: -1px 37px 28px #0000001c;
+
+        div {
+            svg {
+                position: absolute;
+                z-index: 1;
+                right: 350px;
+                top: 31px;
+                opacity: 0.4;
+            }
+
+            input {
+                width: 275px;
+                position: absolute;
+                right: 100px;
+                top: 19px;
+                padding-left: 40px;
+
+                &::placeholder {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+    .nav-container {
+        position: fixed;
+        background: #182645;
+        width: 300px;
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            filter: invert(100%);
+            width: 220px;
+            margin-top: 45px;
+        }
+
+        .nav-items {
+            margin-top: 40px;
+            padding: 0;
+
+            li {
+                width: 300px;
+                height: 74px;
+
+                a {
+                    color: #848484;
+                    text-decoration: none;
+                    display: block;
+                    height: 74px;
+                    line-height: 74px;
+                    padding-left: 50px;
+                }
+                .active {
+                    background-image: linear-gradient(to left, rgb(0 0 0 / 0%), rgb(255 255 255 / 16%));
+                    color: #fff !important;
+                }
+            }
         }
     }
 }
