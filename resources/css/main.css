@@ -63,33 +63,36 @@
 }
 
 #app header {
-  float: right;
+  position: fixed;
+  margin-left: 300px;
   background-color: #fff;
   width: calc(100vw - 300px);
-  height: 75px;
   box-shadow: -1px 37px 28px rgba(0, 0, 0, 0.1098039216);
 }
-#app header div svg {
+#app header .top-header {
+  height: 75px;
+}
+#app header .top-header svg {
   position: absolute;
   z-index: 1;
   right: 350px;
   top: 31px;
   opacity: 0.4;
 }
-#app header div input {
+#app header .top-header input {
   width: 275px;
   position: absolute;
   right: 100px;
   top: 19px;
   padding-left: 40px;
 }
-#app header div input::-moz-placeholder {
+#app header .top-header input::-moz-placeholder {
   opacity: 0.5;
 }
-#app header div input:-ms-input-placeholder {
+#app header .top-header input:-ms-input-placeholder {
   opacity: 0.5;
 }
-#app header div input::placeholder {
+#app header .top-header input::placeholder {
   opacity: 0.5;
 }
 #app .nav-container {

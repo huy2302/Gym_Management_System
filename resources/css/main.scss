@@ -82,13 +82,14 @@
 #app {
 
     header {
-        float: right;
+        position: fixed;
+        margin-left: 300px;
         background-color: #fff;
         width: calc(100vw - 300px);
-        height: 75px;
         box-shadow: -1px 37px 28px #0000001c;
 
-        div {
+        .top-header {
+            height: 75px;
             svg {
                 position: absolute;
                 z-index: 1;
