@@ -86,10 +86,11 @@
         margin-left: 300px;
         background-color: #fff;
         width: calc(100vw - 300px);
+        z-index: 2;
 
         .top-header {
             height: 75px;
-            box-shadow: -1px 37px 28px #0000001c;
+            box-shadow: -1px 11px 28px rgb(0 0 0 / 6%);
 
             svg {
                 position: absolute;
@@ -131,6 +132,10 @@
                 align-items: center;
                 cursor: pointer;
 
+                >a {
+                    font-size: 16px;
+                }
+
                 h3 {
                     font-size: 18px;
                     margin: 0;
@@ -144,9 +149,11 @@
                     height: 50px;
                 }
             }
+
             .active-profile {
                 display: block !important;
             }
+
             .profile {
                 display: none;
                 position: absolute;
@@ -181,7 +188,8 @@
                         }
                     }
 
-                    >p {
+                    >a {
+                        text-decoration: none;
                         cursor: pointer;
                         margin: 0;
                         margin-top: 20px;
@@ -235,6 +243,122 @@
             }
         }
     }
+
+    // home page 
+    .homePageContent {
+        margin-left: 300px;
+        padding-top: 151px;
+
+        .homePageContainer {
+            margin: 0 50px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            .homePageLeft {
+                width: 55%;
+                .homePageList {
+                    margin-bottom: 40px;
+                    h2 {
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        opacity: 50%;
+                    }
+                }
+
+                .listItems {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    
+                    .homeItem {
+                        text-align: center;
+                        width: 48%;
+                        height: 140px;
+                        background-color: #f5f7f9;
+                        margin-bottom: 18px;
+                        p {
+                            line-height: 140px;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+
+            .homePageRight {
+                width: 40%;
+                background-color: #f5f7f9;
+                border-radius: 20px;
+                .profileBtn {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 30px 50px;
+                    align-items: center;
+                    p {
+                        font-weight: 600;
+                        margin: 0;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #848484; 
+                        background-color: #ececec;
+                        border-radius: 20px;
+                        font-size: 14px;
+                        padding: 5px 20px;
+                    }
+                }
+
+                .profile {
+                    text-align: center;
+                    img {
+                        width: 100px;
+                        border-radius: 50%;
+                        margin-bottom: 15px;
+                    }
+
+                    h4 {
+                        font-size: 16px;
+                        opacity: 70%;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        opacity: 70%;
+                    }
+                }
+
+                .profileDesc {
+                    display: flex;
+                    width: 85%;
+                    flex-wrap: nowrap;
+                    margin: 0 auto;
+                    margin-top: 40px;
+                    justify-content: space-between;
+                    margin-bottom: 100px;
+
+                    .descriptions {
+                        width: 33%;
+                        text-align: center;
+                        background-color: #ececec;
+                        h4 {
+                            font-size: 12px;
+                            margin: 10px 0;
+                            opacity: 70%;
+                        }
+
+                        p {
+                            margin: 10px 0;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @keyframes showProfile {
@@ -242,6 +366,7 @@
         opacity: 0;
         top: 90px;
     }
+
     to {
         opacity: 1;
         top: 160px;

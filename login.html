@@ -18,13 +18,13 @@
             <div class="login-content">
                 <img src="./resources/img/logo.png" alt="">
                 <h3>Login</h3>
-                <form class="login-form">
+                <form class="login-form" method="POST" action="login">
                     <div class="mb-3">
-                        <input aria-colspan="form-text" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+                        <input name="id" aria-colspan="form-text" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
                         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                     </div>
                     <div class="mb-3">
-                        <input aria-colspan="form-text" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <input name="pass" aria-colspan="form-text" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                     </div>
                     <div class="mb-3 form-check" style="    display: flex;
                     justify-content: space-between;">
